@@ -24,7 +24,7 @@ typedef NS_ENUM(NSUInteger, UIColorMDCPaletteId)
   kUIColorMDCPaletteIdA700,
   kUIColorMDCPaletteNumberOfIds
 };
-
+static const NSUInteger kUIColorMDCPaletteNumberOfLowSaturationIds = kUIColorMDCPaletteId900 + 1;
 static const NSUInteger kUIColorMDCPaletteIdPrimary = kUIColorMDCPaletteId500;
 
 @interface UIColor (MaterialDesignCocoa)
@@ -40,5 +40,23 @@ static const NSUInteger kUIColorMDCPaletteIdPrimary = kUIColorMDCPaletteId500;
 
 // UI Color palette
 + (instancetype)mdcRedColorWithPaletteId:(UIColorMDCPaletteId)paletteId;
++ (instancetype)mdcPinkColorWithPaletteId:(UIColorMDCPaletteId)paletteId;
++ (instancetype)mdcPurpleColorWithPaletteId:(UIColorMDCPaletteId)paletteId;
++ (instancetype)mdcDeppPurpleColorWithPaletteId:(UIColorMDCPaletteId)paletteId;
++ (instancetype)mdcIndigoColorWithPaletteId:(UIColorMDCPaletteId)paletteId;
++ (instancetype)mdcBlueColorWithPaletteId:(UIColorMDCPaletteId)paletteId;
++ (instancetype)mdcLightBlueColorWithPaletteId:(UIColorMDCPaletteId)paletteId;
++ (instancetype)mdcCyanColorWithPaletteId:(UIColorMDCPaletteId)paletteId;
++ (instancetype)mdcTealColorWithPaletteId:(UIColorMDCPaletteId)paletteId;
++ (instancetype)mdcGreenColorWithPaletteId:(UIColorMDCPaletteId)paletteId;
++ (instancetype)mdcLightGreenColorWithPaletteId:(UIColorMDCPaletteId)paletteId;
++ (instancetype)mdcLimeColorWithPaletteId:(UIColorMDCPaletteId)paletteId;
++ (instancetype)mdcYellowColorWithPaletteId:(UIColorMDCPaletteId)paletteId;
++ (instancetype)mdcAmberColorWithPaletteId:(UIColorMDCPaletteId)paletteId;
++ (instancetype)mdcOrangeColorWithPaletteId:(UIColorMDCPaletteId)paletteId;
++ (instancetype)mdcDeepOrangeColorWithPaletteId:(UIColorMDCPaletteId)paletteId;
++ (instancetype)mdcBrownColorWithPaletteId:(UIColorMDCPaletteId)paletteId;
++ (instancetype)mdcGrayColorWithPaletteId:(UIColorMDCPaletteId)paletteId;
++ (instancetype)mdcBlueGrayColorWithPaletteId:(UIColorMDCPaletteId)paletteId;
 
 @end
