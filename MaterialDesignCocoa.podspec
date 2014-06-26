@@ -1,9 +1,10 @@
 Pod::Spec.new do |s|
   s.name             = "MaterialDesignCocoa"
   s.version          = "0.0.1"
-  s.summary          = "Material Design UI Components for Cocoa."
+  s.summary          = "Material Design UI Components for Cocoa. Material Design is introduced in Google I/O 2014."
   s.description      = <<-DESC
                        Material Design UI Components for Cocoa.
+                       Material Design is introduced in Google I/O 2014.
                        I hope that Google will release material desined UI Components for iOS.
                        This library includes these components only.
                        - Card
