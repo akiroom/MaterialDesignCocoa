@@ -2,16 +2,14 @@
 //  MDCMasterViewController.m
 //  MaterialDesignCocoaExample
 //
-//  Created by Hiroki Akiyama on 2014/06/25.
-//
-//
 
 #import "MDCMasterViewController.h"
-
+#import <MaterialDesignCocoa/MDCTableViewCell.h>
 #import "MDCDetailViewController.h"
+#import "MDCCardExampleViewController.h"
 
 @interface MDCMasterViewController () {
-    NSMutableArray *_objects;
+  NSMutableArray *_objects;
 }
 @end
 
@@ -19,33 +17,25 @@
 
 - (void)awakeFromNib
 {
-    [super awakeFromNib];
+  [super awakeFromNib];
 }
 
 - (void)viewDidLoad
 {
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-  self.navigationItem.leftBarButtonItem = self.editButtonItem;
+  [super viewDidLoad];
+  [self.navigationController.navigationBar setBarStyle:UIBarStyleBlackOpaque];
+  [self.navigationController.navigationBar setTranslucent:NO];
+  
+  
+  self.tableView.rowHeight = 64.0;
 
-  UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
-  self.navigationItem.rightBarButtonItem = addButton;
+  // Do any additional setup after loading the view, typically from a nib.
 }
 
 - (void)didReceiveMemoryWarning
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-- (void)insertNewObject:(id)sender
-{
-    if (!_objects) {
-        _objects = [[NSMutableArray alloc] init];
-    }
-    [_objects insertObject:[NSDate date] atIndex:0];
-    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
-    [self.tableView insertRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
+  [super didReceiveMemoryWarning];
+  // Dispose of any resources that can be recreated.
 }
 
 #pragma mark - Table View
@@ -57,57 +47,37 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-  return _objects.count;
+  return 3;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
-
-  NSDate *object = _objects[indexPath.row];
-  cell.textLabel.text = [object description];
-    return cell;
+  MDCTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
+  
+  switch (indexPath.row) {
+    case 0:
+      [cell.textLabel setText:@"Card"];
+      [cell.detailTextLabel setText:@"Example for card component."];
+      break;
+    default:
+      break;
+  }
+  return cell;
 }
 
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        [_objects removeObjectAtIndex:indexPath.row];
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
+  switch (indexPath.row) {
+    case 0: {
+      MDCCardExampleViewController *cardExampleViewController =
+      [[MDCCardExampleViewController alloc] init];
+      [self.navigationController pushViewController:cardExampleViewController animated:YES];
+      break;
     }
-}
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
-{
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    if ([[segue identifier] isEqualToString:@"showDetail"]) {
-        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-        NSDate *object = _objects[indexPath.row];
-        [[segue destinationViewController] setDetailItem:object];
+    default: {
+      break;
     }
+  }
 }
 
 @end
