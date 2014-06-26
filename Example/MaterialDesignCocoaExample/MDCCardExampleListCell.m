@@ -16,4 +16,10 @@
   return self;
 }
 
+- (void)layoutSubviews
+{
+  [super layoutSubviews];
+  [self.previewImageView.layer setCornerRadius:2.0];
+}
+
 @end

@@ -60,7 +60,7 @@
                             <outlet property="delegate" destination="pGg-6v-bdr" id="Y6K-Cp-Qkv"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Master" id="tQt-TN-PWz"/>
+                    <navigationItem key="navigationItem" id="tQt-TN-PWz"/>
                     <connections>
                         <segue destination="q7h-SK-esZ" kind="push" identifier="pushToCardExample" id="gVB-am-BMT"/>
                     </connections>

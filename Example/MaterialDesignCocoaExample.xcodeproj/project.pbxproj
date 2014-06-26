@@ -15,7 +15,6 @@
 		753ED6B9195BD23D0098892B /* MDCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 753ED6B8195BD23D0098892B /* MDCAppDelegate.m */; };
 		753ED6BC195BD23D0098892B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 753ED6BA195BD23D0098892B /* Main.storyboard */; };
 		753ED6BF195BD23D0098892B /* MDCMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 753ED6BE195BD23D0098892B /* MDCMasterViewController.m */; };
-		753ED6C2195BD23D0098892B /* MDCDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 753ED6C1195BD23D0098892B /* MDCDetailViewController.m */; };
 		753ED6C4195BD23D0098892B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 753ED6C3195BD23D0098892B /* Images.xcassets */; };
 		753ED6CB195BD23D0098892B /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 753ED6CA195BD23D0098892B /* XCTest.framework */; };
 		753ED6CC195BD23D0098892B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 753ED6A8195BD23D0098892B /* Foundation.framework */; };
@@ -52,8 +51,6 @@
 		753ED6BB195BD23D0098892B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		753ED6BD195BD23D0098892B /* MDCMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDCMasterViewController.h; sourceTree = "<group>"; };
 		753ED6BE195BD23D0098892B /* MDCMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDCMasterViewController.m; sourceTree = "<group>"; };
-		753ED6C0195BD23D0098892B /* MDCDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDCDetailViewController.h; sourceTree = "<group>"; };
-		753ED6C1195BD23D0098892B /* MDCDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDCDetailViewController.m; sourceTree = "<group>"; };
 		753ED6C3195BD23D0098892B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		753ED6C9195BD23D0098892B /* MaterialDesignCocoaExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MaterialDesignCocoaExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		753ED6CA195BD23D0098892B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -136,8 +133,6 @@
 				753ED6BA195BD23D0098892B /* Main.storyboard */,
 				753ED6BD195BD23D0098892B /* MDCMasterViewController.h */,
 				753ED6BE195BD23D0098892B /* MDCMasterViewController.m */,
-				753ED6C0195BD23D0098892B /* MDCDetailViewController.h */,
-				753ED6C1195BD23D0098892B /* MDCDetailViewController.m */,
 				753ED6C3195BD23D0098892B /* Images.xcassets */,
 				753ED6AF195BD23D0098892B /* Supporting Files */,
 			);
@@ -339,7 +334,6 @@
 				753ED6F9195C064F0098892B /* MDCCardExampleNotificationCell.m in Sources */,
 				753ED6BF195BD23D0098892B /* MDCMasterViewController.m in Sources */,
 				753ED703195C141D0098892B /* MDCCardExampleListCell.m in Sources */,
-				753ED6C2195BD23D0098892B /* MDCDetailViewController.m in Sources */,
 				753ED6B9195BD23D0098892B /* MDCAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

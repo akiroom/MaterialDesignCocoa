@@ -5,7 +5,6 @@
 
 #import "MDCMasterViewController.h"
 #import <MaterialDesignCocoa/MDCTableViewCell.h>
-#import "MDCDetailViewController.h"
 #import "MDCCardExampleViewController.h"
 
 @interface MDCMasterViewController () {
