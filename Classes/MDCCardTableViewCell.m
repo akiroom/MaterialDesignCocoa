@@ -38,6 +38,8 @@
   
   // Hide separator
   self.separatorInset = (UIEdgeInsets){0.0, 0.0, 0.0, CGRectGetWidth(self.bounds)};
+  
+  [self.contentView.superview bringSubviewToFront:self.contentView];
 }
 
 #pragma mark -

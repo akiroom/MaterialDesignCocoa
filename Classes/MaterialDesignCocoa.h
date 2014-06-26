@@ -2,13 +2,14 @@
 //  MaterialDesignCocoa.h
 //  Pods
 //
-//  Created by Hiroki Akiyama on 2014/06/26.
-//
-//
 
 #ifndef Pods_MaterialDesignCocoa_h
 #define Pods_MaterialDesignCocoa_h
 
-
+#import "MDCCardTableViewCell.h"
+#import "MDCCardView.h"
+#import "MDCTableViewCell.h"
+#import "UIColor+MaterialDesignCocoa.h"
+#import "UIFont+MaterialDesignCocoa.h"
 
 #endif

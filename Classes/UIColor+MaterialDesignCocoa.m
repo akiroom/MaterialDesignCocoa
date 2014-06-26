@@ -129,7 +129,7 @@
   return [UIColor mdcColorWithPaletteId:paletteId inColorPalette:hex_colors];
 }
 
-+ (instancetype)mdcDeppPurpleColorWithPaletteId:(UIColorMDCPaletteId)paletteId
++ (instancetype)mdcDeepPurpleColorWithPaletteId:(UIColorMDCPaletteId)paletteId
 {
   uint hex_colors[kUIColorMDCPaletteNumberOfIds] =
   {

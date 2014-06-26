@@ -42,7 +42,7 @@ static const NSUInteger kUIColorMDCPaletteIdPrimary = kUIColorMDCPaletteId500;
 + (instancetype)mdcRedColorWithPaletteId:(UIColorMDCPaletteId)paletteId;
 + (instancetype)mdcPinkColorWithPaletteId:(UIColorMDCPaletteId)paletteId;
 + (instancetype)mdcPurpleColorWithPaletteId:(UIColorMDCPaletteId)paletteId;
-+ (instancetype)mdcDeppPurpleColorWithPaletteId:(UIColorMDCPaletteId)paletteId;
++ (instancetype)mdcDeepPurpleColorWithPaletteId:(UIColorMDCPaletteId)paletteId;
 + (instancetype)mdcIndigoColorWithPaletteId:(UIColorMDCPaletteId)paletteId;
 + (instancetype)mdcBlueColorWithPaletteId:(UIColorMDCPaletteId)paletteId;
 + (instancetype)mdcLightBlueColorWithPaletteId:(UIColorMDCPaletteId)paletteId;

@@ -56,8 +56,8 @@
   
   switch (indexPath.row) {
     case 0:
-      [cell.textLabel setText:@"Card"];
-      [cell.detailTextLabel setText:@"Example for card component."];
+      [cell.textLabel setText:@"Card & Color"];
+      [cell.detailTextLabel setText:@"Example for MDCCardView & UIColor extensions."];
       break;
     default:
       break;
