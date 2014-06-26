@@ -23,6 +23,7 @@
 		753ED6D5195BD23D0098892B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 753ED6D3195BD23D0098892B /* InfoPlist.strings */; };
 		753ED6D7195BD23D0098892B /* MaterialDesignCocoaExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 753ED6D6195BD23D0098892B /* MaterialDesignCocoaExampleTests.m */; };
 		753ED6F2195BE0690098892B /* MDCCardExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 753ED6F1195BE0690098892B /* MDCCardExampleViewController.m */; };
+		753ED6F9195C064F0098892B /* MDCCardExampleNotificationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 753ED6F8195C064F0098892B /* MDCCardExampleNotificationCell.m */; };
 		E16F020CB9B64681AE36ED2E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DC5F7996D2F446B921621DB /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +61,8 @@
 		753ED6D6195BD23D0098892B /* MaterialDesignCocoaExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MaterialDesignCocoaExampleTests.m; sourceTree = "<group>"; };
 		753ED6F0195BE0690098892B /* MDCCardExampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDCCardExampleViewController.h; sourceTree = "<group>"; };
 		753ED6F1195BE0690098892B /* MDCCardExampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDCCardExampleViewController.m; sourceTree = "<group>"; };
+		753ED6F7195C064F0098892B /* MDCCardExampleNotificationCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDCCardExampleNotificationCell.h; sourceTree = "<group>"; };
+		753ED6F8195C064F0098892B /* MDCCardExampleNotificationCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDCCardExampleNotificationCell.m; sourceTree = "<group>"; };
 		7DC5F7996D2F446B921621DB /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C76D6EF0D09C414CAFD05ABF /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -170,10 +173,20 @@
 		753ED6EF195BE0390098892B /* Card */ = {
 			isa = PBXGroup;
 			children = (
+				753ED6F6195C062E0098892B /* Card Notification Cell */,
 				753ED6F0195BE0690098892B /* MDCCardExampleViewController.h */,
 				753ED6F1195BE0690098892B /* MDCCardExampleViewController.m */,
 			);
 			name = Card;
+			sourceTree = "<group>";
+		};
+		753ED6F6195C062E0098892B /* Card Notification Cell */ = {
+			isa = PBXGroup;
+			children = (
+				753ED6F7195C064F0098892B /* MDCCardExampleNotificationCell.h */,
+				753ED6F8195C064F0098892B /* MDCCardExampleNotificationCell.m */,
+			);
+			name = "Card Notification Cell";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -310,6 +323,7 @@
 			files = (
 				753ED6B5195BD23D0098892B /* main.m in Sources */,
 				753ED6F2195BE0690098892B /* MDCCardExampleViewController.m in Sources */,
+				753ED6F9195C064F0098892B /* MDCCardExampleNotificationCell.m in Sources */,
 				753ED6BF195BD23D0098892B /* MDCMasterViewController.m in Sources */,
 				753ED6C2195BD23D0098892B /* MDCDetailViewController.m in Sources */,
 				753ED6B9195BD23D0098892B /* MDCAppDelegate.m in Sources */,

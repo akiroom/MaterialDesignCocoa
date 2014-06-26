@@ -4,7 +4,7 @@
 //
 
 #import "MDCCardExampleViewController.h"
-#import <MaterialDesignCocoa/MDCCardTableViewCell.h>
+#import "MDCCardExampleNotificationCell.h"
 
 @interface MDCCardExampleViewController ()
 
@@ -27,7 +27,7 @@
   
   self.tableView.backgroundColor = [UIColor colorWithWhite:0.91 alpha:1.0];
   
-  [self.tableView registerClass:[MDCCardTableViewCell class] forCellReuseIdentifier:@"cell"];
+//  [self.tableView registerClass:[MDCCardTableViewCell class] forCellReuseIdentifier:@"cell"];
 }
 
 - (void)didReceiveMemoryWarning
@@ -65,10 +65,19 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-  MDCCardTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
-  [cell setBackgroundColor:self.tableView.backgroundColor];
-  [cell.textLabel setText:@"test"];
-  return cell;
+  if (indexPath.section == 0) {
+    MDCCardExampleNotificationCell *cell = [tableView dequeueReusableCellWithIdentifier:@"NotificationCell"
+                                                                           forIndexPath:indexPath];
+    [cell setBackgroundColor:self.tableView.backgroundColor];
+    [cell.titleLabel setText:@"Card Component"];
+    [cell.descriptionLabel setText:@"This example is card components. The detail is for http://www.google.com/design/spec/components/cards.html"];
+    return cell;
+  } else {
+    MDCCardTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
+    [cell setBackgroundColor:self.tableView.backgroundColor];
+    [cell.textLabel setText:@"test"];
+    return cell;
+  }
 }
 
 @end

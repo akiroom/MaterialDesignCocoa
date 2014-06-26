@@ -47,7 +47,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-  return 3;
+  return 1;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -69,9 +69,7 @@
 {
   switch (indexPath.row) {
     case 0: {
-      MDCCardExampleViewController *cardExampleViewController =
-      [[MDCCardExampleViewController alloc] init];
-      [self.navigationController pushViewController:cardExampleViewController animated:YES];
+      [self performSegueWithIdentifier:@"pushToCardExample" sender:self];
       break;
     }
     default: {
