@@ -4,7 +4,7 @@
 [![License](https://img.shields.io/cocoapods/l/MaterialDesignCocoa.svg?style=flat)](http://cocoadocs.org/docsets/MaterialDesignCocoa)
 [![Platform](https://img.shields.io/cocoapods/p/MaterialDesignCocoa.svg?style=flat)](http://cocoadocs.org/docsets/MaterialDesignCocoa)
 
-About Material Design: ![http://www.google.com/design/spec/material-design/](http://www.google.com/design/spec/material-design/)
+About Material Design: [http://www.google.com/design/spec/material-design/](http://www.google.com/design/spec/material-design/)
 
 Material Design UI Components for Cocoa.
 I hope that Google will release material desined UI Components for iOS.
