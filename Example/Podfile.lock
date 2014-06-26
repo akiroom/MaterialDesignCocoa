@@ -1,0 +1,14 @@
+PODS:
+  - MaterialDesignCocoa (0.0.1)
+
+DEPENDENCIES:
+  - MaterialDesignCocoa (from `../`)
+
+EXTERNAL SOURCES:
+  MaterialDesignCocoa:
+    :path: ../
+
+SPEC CHECKSUMS:
+  MaterialDesignCocoa: cb26f5f6f5b90851d6e89ad316b24ed877342c54
+
+COCOAPODS: 0.33.1
