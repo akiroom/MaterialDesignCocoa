@@ -17,10 +17,8 @@ Pod::Spec.new do |s|
   s.author           = { "Hiroki Akiyama" => "aki-hiroki@nifty.com" }
   s.source           = { :git => "https://github.com/akiroom/MaterialDesignCocoa.git", :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/akiroom'
-
+  s.platform = :ios
   s.requires_arc = true
-
   s.source_files = 'Classes'
-
   s.ios.frameworks = 'UIKit'
 end
