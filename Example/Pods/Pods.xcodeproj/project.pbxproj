@@ -11,12 +11,12 @@
 		1D481384818B4F0DBDFF55B9 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BCD8866CB8404D30BC719CC7 /* Pods-dummy.m */; };
 		3C468933E8CF475F86CFF706 /* Pods-MaterialDesignCocoa-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B620B5BEF9B3490291A621E9 /* Pods-MaterialDesignCocoa-dummy.m */; };
 		4366E44B0ADB4FEEA6CF1182 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CA29CF31FCB49F5AD40C3C1 /* Foundation.framework */; };
+		751DD60819F0F4E4003BE82A /* MDCCardTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 751DD5FF19F0F4E4003BE82A /* MDCCardTableViewCell.m */; };
+		751DD60919F0F4E4003BE82A /* MDCCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 751DD60119F0F4E4003BE82A /* MDCCardView.m */; };
+		751DD60A19F0F4E4003BE82A /* MDCTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 751DD60319F0F4E4003BE82A /* MDCTableViewCell.m */; };
+		751DD60B19F0F4E4003BE82A /* UIColor+MaterialDesignCocoa.m in Sources */ = {isa = PBXBuildFile; fileRef = 751DD60519F0F4E4003BE82A /* UIColor+MaterialDesignCocoa.m */; };
+		751DD60C19F0F4E4003BE82A /* UIFont+MaterialDesignCocoa.m in Sources */ = {isa = PBXBuildFile; fileRef = 751DD60719F0F4E4003BE82A /* UIFont+MaterialDesignCocoa.m */; };
 		753ED705195C1A0A0098892B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 753ED704195C1A0A0098892B /* UIKit.framework */; };
-		753ED711195C1B620098892B /* MDCCardTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 753ED708195C1B620098892B /* MDCCardTableViewCell.m */; };
-		753ED712195C1B620098892B /* MDCCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 753ED70A195C1B620098892B /* MDCCardView.m */; };
-		753ED713195C1B620098892B /* MDCTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 753ED70C195C1B620098892B /* MDCTableViewCell.m */; };
-		753ED714195C1B620098892B /* UIColor+MaterialDesignCocoa.m in Sources */ = {isa = PBXBuildFile; fileRef = 753ED70E195C1B620098892B /* UIColor+MaterialDesignCocoa.m */; };
-		753ED715195C1B620098892B /* UIFont+MaterialDesignCocoa.m in Sources */ = {isa = PBXBuildFile; fileRef = 753ED710195C1B620098892B /* UIFont+MaterialDesignCocoa.m */; };
 		753ED717195C1BB80098892B /* MaterialDesignCocoa.h in Headers */ = {isa = PBXBuildFile; fileRef = 753ED716195C1BB80098892B /* MaterialDesignCocoa.h */; };
 		CC153B9B56744279AD7AFEDB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CA29CF31FCB49F5AD40C3C1 /* Foundation.framework */; };
 /* End PBXBuildFile section */
@@ -35,17 +35,17 @@
 		2C49D06FE6004D3DA7E5004A /* Pods-MaterialDesignCocoa.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MaterialDesignCocoa.xcconfig"; sourceTree = "<group>"; };
 		4FF57C3A06594CE681DDDC8A /* Pods-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-environment.h"; sourceTree = "<group>"; };
 		5430182F06F143BFBFDD620E /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.xcconfig; sourceTree = "<group>"; };
+		751DD5FE19F0F4E4003BE82A /* MDCCardTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MDCCardTableViewCell.h; path = Classes/MDCCardTableViewCell.h; sourceTree = "<group>"; };
+		751DD5FF19F0F4E4003BE82A /* MDCCardTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MDCCardTableViewCell.m; path = Classes/MDCCardTableViewCell.m; sourceTree = "<group>"; };
+		751DD60019F0F4E4003BE82A /* MDCCardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MDCCardView.h; path = Classes/MDCCardView.h; sourceTree = "<group>"; };
+		751DD60119F0F4E4003BE82A /* MDCCardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MDCCardView.m; path = Classes/MDCCardView.m; sourceTree = "<group>"; };
+		751DD60219F0F4E4003BE82A /* MDCTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MDCTableViewCell.h; path = Classes/MDCTableViewCell.h; sourceTree = "<group>"; };
+		751DD60319F0F4E4003BE82A /* MDCTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MDCTableViewCell.m; path = Classes/MDCTableViewCell.m; sourceTree = "<group>"; };
+		751DD60419F0F4E4003BE82A /* UIColor+MaterialDesignCocoa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor+MaterialDesignCocoa.h"; path = "Classes/UIColor+MaterialDesignCocoa.h"; sourceTree = "<group>"; };
+		751DD60519F0F4E4003BE82A /* UIColor+MaterialDesignCocoa.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor+MaterialDesignCocoa.m"; path = "Classes/UIColor+MaterialDesignCocoa.m"; sourceTree = "<group>"; };
+		751DD60619F0F4E4003BE82A /* UIFont+MaterialDesignCocoa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIFont+MaterialDesignCocoa.h"; path = "Classes/UIFont+MaterialDesignCocoa.h"; sourceTree = "<group>"; };
+		751DD60719F0F4E4003BE82A /* UIFont+MaterialDesignCocoa.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIFont+MaterialDesignCocoa.m"; path = "Classes/UIFont+MaterialDesignCocoa.m"; sourceTree = "<group>"; };
 		753ED704195C1A0A0098892B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		753ED707195C1B620098892B /* MDCCardTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MDCCardTableViewCell.h; path = Classes/ios/MDCCardTableViewCell.h; sourceTree = "<group>"; };
-		753ED708195C1B620098892B /* MDCCardTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MDCCardTableViewCell.m; path = Classes/ios/MDCCardTableViewCell.m; sourceTree = "<group>"; };
-		753ED709195C1B620098892B /* MDCCardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MDCCardView.h; path = Classes/ios/MDCCardView.h; sourceTree = "<group>"; };
-		753ED70A195C1B620098892B /* MDCCardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MDCCardView.m; path = Classes/ios/MDCCardView.m; sourceTree = "<group>"; };
-		753ED70B195C1B620098892B /* MDCTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MDCTableViewCell.h; path = Classes/ios/MDCTableViewCell.h; sourceTree = "<group>"; };
-		753ED70C195C1B620098892B /* MDCTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MDCTableViewCell.m; path = Classes/ios/MDCTableViewCell.m; sourceTree = "<group>"; };
-		753ED70D195C1B620098892B /* UIColor+MaterialDesignCocoa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor+MaterialDesignCocoa.h"; path = "Classes/ios/UIColor+MaterialDesignCocoa.h"; sourceTree = "<group>"; };
-		753ED70E195C1B620098892B /* UIColor+MaterialDesignCocoa.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor+MaterialDesignCocoa.m"; path = "Classes/ios/UIColor+MaterialDesignCocoa.m"; sourceTree = "<group>"; };
-		753ED70F195C1B620098892B /* UIFont+MaterialDesignCocoa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIFont+MaterialDesignCocoa.h"; path = "Classes/ios/UIFont+MaterialDesignCocoa.h"; sourceTree = "<group>"; };
-		753ED710195C1B620098892B /* UIFont+MaterialDesignCocoa.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIFont+MaterialDesignCocoa.m"; path = "Classes/ios/UIFont+MaterialDesignCocoa.m"; sourceTree = "<group>"; };
 		753ED716195C1BB80098892B /* MaterialDesignCocoa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MaterialDesignCocoa.h; path = ../../Classes/MaterialDesignCocoa.h; sourceTree = "<group>"; };
 		7CA29CF31FCB49F5AD40C3C1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		8446F78E1EFB466B87C5B615 /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
@@ -144,16 +144,16 @@
 		750B13AE647B478885883D8C /* MaterialDesignCocoa */ = {
 			isa = PBXGroup;
 			children = (
-				753ED707195C1B620098892B /* MDCCardTableViewCell.h */,
-				753ED708195C1B620098892B /* MDCCardTableViewCell.m */,
-				753ED709195C1B620098892B /* MDCCardView.h */,
-				753ED70A195C1B620098892B /* MDCCardView.m */,
-				753ED70B195C1B620098892B /* MDCTableViewCell.h */,
-				753ED70C195C1B620098892B /* MDCTableViewCell.m */,
-				753ED70D195C1B620098892B /* UIColor+MaterialDesignCocoa.h */,
-				753ED70E195C1B620098892B /* UIColor+MaterialDesignCocoa.m */,
-				753ED70F195C1B620098892B /* UIFont+MaterialDesignCocoa.h */,
-				753ED710195C1B620098892B /* UIFont+MaterialDesignCocoa.m */,
+				751DD5FE19F0F4E4003BE82A /* MDCCardTableViewCell.h */,
+				751DD5FF19F0F4E4003BE82A /* MDCCardTableViewCell.m */,
+				751DD60019F0F4E4003BE82A /* MDCCardView.h */,
+				751DD60119F0F4E4003BE82A /* MDCCardView.m */,
+				751DD60219F0F4E4003BE82A /* MDCTableViewCell.h */,
+				751DD60319F0F4E4003BE82A /* MDCTableViewCell.m */,
+				751DD60419F0F4E4003BE82A /* UIColor+MaterialDesignCocoa.h */,
+				751DD60519F0F4E4003BE82A /* UIColor+MaterialDesignCocoa.m */,
+				751DD60619F0F4E4003BE82A /* UIFont+MaterialDesignCocoa.h */,
+				751DD60719F0F4E4003BE82A /* UIFont+MaterialDesignCocoa.m */,
 				496C58EEB6F6472DB046477F /* Support Files */,
 			);
 			name = MaterialDesignCocoa;
@@ -266,11 +266,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				753ED714195C1B620098892B /* UIColor+MaterialDesignCocoa.m in Sources */,
-				753ED713195C1B620098892B /* MDCTableViewCell.m in Sources */,
-				753ED711195C1B620098892B /* MDCCardTableViewCell.m in Sources */,
-				753ED715195C1B620098892B /* UIFont+MaterialDesignCocoa.m in Sources */,
-				753ED712195C1B620098892B /* MDCCardView.m in Sources */,
+				751DD60C19F0F4E4003BE82A /* UIFont+MaterialDesignCocoa.m in Sources */,
+				751DD60B19F0F4E4003BE82A /* UIColor+MaterialDesignCocoa.m in Sources */,
+				751DD60919F0F4E4003BE82A /* MDCCardView.m in Sources */,
+				751DD60A19F0F4E4003BE82A /* MDCTableViewCell.m in Sources */,
+				751DD60819F0F4E4003BE82A /* MDCCardTableViewCell.m in Sources */,
 				1D481384818B4F0DBDFF55B9 /* Pods-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
