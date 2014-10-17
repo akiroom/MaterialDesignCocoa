@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "MaterialDesignCocoa"
-  s.version          = "0.0.1"
+  s.version          = "0.0.2"
   s.summary          = "Material Design UI Components for Cocoa. Material Design is introduced in Google I/O 2014."
   s.description      = <<-DESC
                        Material Design UI Components for Cocoa.
@@ -21,10 +21,6 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   s.source_files = 'Classes'
-  # s.resources = 'Assets/*.png'
-  s.osx.exclude_files = "Classes/ios"
 
-  # s.public_header_files = 'Classes/**/*.h'
   s.ios.frameworks = 'UIKit'
-  # s.dependency 'JSONKit', '~> 1.4'
 end
